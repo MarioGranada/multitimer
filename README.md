@@ -6,6 +6,14 @@ Each challenge exposes start/stop behaviour through a ref, and the result is sho
 
 > **Follow-along project.** This app was built while following **React — The Complete Guide (Academind / Maximilian Schwarzmüller)**. It is included in the portfolio as a learning exercise, not as a production product. The implementation is my own work based on the course material.
 
+## Live demo
+
+| | |
+| --- | --- |
+| **Live site** | https://mariogranada.github.io/multitimer/ |
+| **Repository** | https://github.com/MarioGranada/multitimer |
+| **Portfolio summary** | React timer game with four precision challenges (1–15 s) that showcases refs, useImperativeHandle and portal-rendered result modals. |
+
 ## Features
 
 - Player name entry before starting.
@@ -83,6 +91,7 @@ Open http://localhost:5173.
 
 ## Deployment
 
+- **Live:** `.github/workflows/deploy.yml` builds the app on every push to the default branch and publishes `dist/` (plus a `404.html` SPA fallback) to the `gh-pages` branch, which GitHub Pages serves at https://mariogranada.github.io/multitimer/.
 - Target: GitHub Actions builds the Vite app and publishes `dist/` to GitHub Pages. Set the Vite `base` to the repository path.
 - The app is fully client-side and needs no backend or database.
 - Vercel is an alternative if a simpler preview deployment is preferred.
